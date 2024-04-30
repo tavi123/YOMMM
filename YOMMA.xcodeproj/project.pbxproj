@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C13FA4B72F7E62A91F43852 /* Pods_YOMMA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AC456C48C09B17FDE3AE56F /* Pods_YOMMA.framework */; };
 		8FD93B3A2BE136FB00B4E483 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD93B392BE136FB00B4E483 /* AppDelegate.swift */; };
 		8FD93B3C2BE136FB00B4E483 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD93B3B2BE136FB00B4E483 /* SceneDelegate.swift */; };
 		8FD93B3E2BE136FB00B4E483 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD93B3D2BE136FB00B4E483 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C0DE24CBEB868BC80BBBFE2 /* Pods-YOMMA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOMMA.release.xcconfig"; path = "Target Support Files/Pods-YOMMA/Pods-YOMMA.release.xcconfig"; sourceTree = "<group>"; };
+		7AC456C48C09B17FDE3AE56F /* Pods_YOMMA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YOMMA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD93B362BE136FB00B4E483 /* YOMMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YOMMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD93B392BE136FB00B4E483 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FD93B3B2BE136FB00B4E483 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		8FD93B422BE136FE00B4E483 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FD93B452BE136FE00B4E483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FD93B472BE136FE00B4E483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6B740D7AF7289C1E125BBA4 /* Pods-YOMMA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOMMA.debug.xcconfig"; path = "Target Support Files/Pods-YOMMA/Pods-YOMMA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C13FA4B72F7E62A91F43852 /* Pods_YOMMA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5796434B92C9B164BF9F4524 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AC456C48C09B17FDE3AE56F /* Pods_YOMMA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FD93B2D2BE136FB00B4E483 = {
 			isa = PBXGroup;
 			children = (
 				8FD93B382BE136FB00B4E483 /* YOMMA */,
 				8FD93B372BE136FB00B4E483 /* Products */,
+				B50B20AD65DA51B25718FDFC /* Pods */,
+				5796434B92C9B164BF9F4524 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = YOMMA;
 			sourceTree = "<group>";
 		};
+		B50B20AD65DA51B25718FDFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6B740D7AF7289C1E125BBA4 /* Pods-YOMMA.debug.xcconfig */,
+				6C0DE24CBEB868BC80BBBFE2 /* Pods-YOMMA.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FD93B4A2BE136FE00B4E483 /* Build configuration list for PBXNativeTarget "YOMMA" */;
 			buildPhases = (
+				E6BE3354A812AEF61EBCF188 /* [CP] Check Pods Manifest.lock */,
 				8FD93B322BE136FB00B4E483 /* Sources */,
 				8FD93B332BE136FB00B4E483 /* Frameworks */,
 				8FD93B342BE136FB00B4E483 /* Resources */,
+				C8E617210267C543B26D85C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C8E617210267C543B26D85C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YOMMA/Pods-YOMMA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YOMMA/Pods-YOMMA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YOMMA/Pods-YOMMA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6BE3354A812AEF61EBCF188 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YOMMA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8FD93B322BE136FB00B4E483 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		8FD93B4B2BE136FE00B4E483 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6B740D7AF7289C1E125BBA4 /* Pods-YOMMA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +385,7 @@
 		};
 		8FD93B4C2BE136FE00B4E483 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C0DE24CBEB868BC80BBBFE2 /* Pods-YOMMA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
