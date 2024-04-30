@@ -14,6 +14,10 @@
 		8FD93B432BE136FE00B4E483 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FD93B422BE136FE00B4E483 /* Assets.xcassets */; };
 		8FD93B4F2BE140B600B4E483 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD93B4E2BE140B600B4E483 /* HomeView.swift */; };
 		8FD93B522BE1418D00B4E483 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD93B512BE1418D00B4E483 /* SplashView.swift */; };
+		8FD93B552BE148AC00B4E483 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD93B542BE148AC00B4E483 /* UIViewControllerExtension.swift */; };
+		8FD93B572BE14A3D00B4E483 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD93B562BE14A3D00B4E483 /* Log.swift */; };
+		8FD93B592BE14C5600B4E483 /* ImageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FD93B582BE14C5600B4E483 /* ImageAssets.xcassets */; };
+		8FD93B5B2BE14D2D00B4E483 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD93B5A2BE14D2D00B4E483 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		8FD93B472BE136FE00B4E483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FD93B4E2BE140B600B4E483 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8FD93B512BE1418D00B4E483 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		8FD93B542BE148AC00B4E483 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		8FD93B562BE14A3D00B4E483 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		8FD93B582BE14C5600B4E483 /* ImageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageAssets.xcassets; sourceTree = "<group>"; };
+		8FD93B5A2BE14D2D00B4E483 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		B6B740D7AF7289C1E125BBA4 /* Pods-YOMMA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YOMMA.debug.xcconfig"; path = "Target Support Files/Pods-YOMMA/Pods-YOMMA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +86,7 @@
 				8FD93B3B2BE136FB00B4E483 /* SceneDelegate.swift */,
 				8FD93B3D2BE136FB00B4E483 /* ViewController.swift */,
 				8FD93B422BE136FE00B4E483 /* Assets.xcassets */,
+				8FD93B582BE14C5600B4E483 /* ImageAssets.xcassets */,
 				8FD93B472BE136FE00B4E483 /* Info.plist */,
 			);
 			path = YOMMA;
@@ -102,6 +111,9 @@
 		8FD93B532BE1428500B4E483 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8FD93B542BE148AC00B4E483 /* UIViewControllerExtension.swift */,
+				8FD93B562BE14A3D00B4E483 /* Log.swift */,
+				8FD93B5A2BE14D2D00B4E483 /* UIImageExtension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -175,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD93B592BE14C5600B4E483 /* ImageAssets.xcassets in Resources */,
 				8FD93B432BE136FE00B4E483 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,11 +241,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD93B552BE148AC00B4E483 /* UIViewControllerExtension.swift in Sources */,
+				8FD93B572BE14A3D00B4E483 /* Log.swift in Sources */,
 				8FD93B3E2BE136FB00B4E483 /* ViewController.swift in Sources */,
 				8FD93B4F2BE140B600B4E483 /* HomeView.swift in Sources */,
 				8FD93B522BE1418D00B4E483 /* SplashView.swift in Sources */,
 				8FD93B3A2BE136FB00B4E483 /* AppDelegate.swift in Sources */,
 				8FD93B3C2BE136FB00B4E483 /* SceneDelegate.swift in Sources */,
+				8FD93B5B2BE14D2D00B4E483 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

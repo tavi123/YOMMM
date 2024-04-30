@@ -12,6 +12,6 @@ class HomeView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("========== test HomeView ===========")
+        Log.logDebugDefault("testHomeView")
     }
 }
